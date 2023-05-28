@@ -25,6 +25,16 @@ As used in this project, we use different formats to process our Linkedin datase
  
  in this project we are mainly focusing on User to Skills and User to Jobs to best give the best recommendation for the user's future jobs
  
+# Processes
+
+There is 4 phases of processes that will be tested to determine how our model compares to other models. 
+
+We have to test with the 
+- original data preprocessing 
+- original data preprocessing + LSTM (Long Short-Term Memory)
+- our own data preprocessing that characterises a job/skill to a very generic type to make it easier to recommend and without LSTM (Long Short-Term Memory)
+- our own data preprocessing + LSTM (Long Short-Term Memory)
+ 
 # Evaluation
 
 For evaluation, we test how long short-term memory has impacted our recommendations for our users, as well as how normalization the data will impact our recommendation with or without long short-term memory. We also tested against GraphRec and Folded Bipartite Network Embedding (FBNE) to determine how our implementation compares to the predecessors of the previous models. We focus on the mean reciprocal rank as our main point of metric to determine how it fares against the previous models. 
